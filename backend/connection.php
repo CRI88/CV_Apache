@@ -6,7 +6,7 @@ header("Content-Type: application/json");
 
 // Conexión a la base de datos
 function connectMariaDB() {
-    $host = 'localhost';
+    $host = '127.0.0.1';
     $user = 'cv_user';
     $password = 'password';
     $dbname = 'cv_db';
