@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import jsPDF from 'jspdf';
 import StatsChart from './StatsChart';
-import CVForm from './CVForm'; // Importar el formulario de actualización
+import CVForm from './CVForm';
 
 const CVPreview = ({ cvData }) => {
   const { cv_info, interests, languages, habilities, certifications, education, experiences } = cvData;

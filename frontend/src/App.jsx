@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import CVPreview from './components/CVPreview';
 import "https://cdn.tailwindcss.com";
+import { API_URL } from './config.js';
 
 const App = () => {
   const [cvData, setCvData] = useState(null);
 
   useEffect(() => {
     // Obtener datos del backend
-    fetch('http://localhost/2daw/M8/Apache_Portfolio_React/cv-project/backend/api.php?id_curriculum=1')
+    fetch(API_URL)
       .then((response) => response.json())
       .then((data) => setCvData(data))
       .catch((error) => console.error('Error al cargar los datos:', error));

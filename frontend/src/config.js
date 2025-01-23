@@ -1,0 +1,1 @@
+export const API_URL = 'http://localhost/2daw/M8/Apache_Portfolio_React/cv-project/backend/api.php?id_curriculum=1';
