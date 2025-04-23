@@ -42,7 +42,7 @@ const CVForm = ({ cvData, idCurriculum }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost/2daw/M8/Apache_Portfolio_React/cv-project/backend/api.php', {
+      const response = await fetch('http://localhost/2daw/M8/Apache_Portfolio_React/cv-project/backend/api.php?id_curriculum=1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
